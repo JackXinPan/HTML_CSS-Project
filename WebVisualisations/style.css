@@ -23,3 +23,11 @@ h2 {
     font-size: 30px;
     font-weight: bold; 
 }
+
+.image-weather {
+    width:20%
+}
+
+.nav-link {
+    font-weight: bold;
+}

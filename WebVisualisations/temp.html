@@ -1,11 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Welcome to My Weather Data Landing Page</title>
+	<title>Temperature</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 	<!-- <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"> -->
@@ -45,18 +43,21 @@
 <!-- Text -->
 
     <div class="row mt-5">
-        <div class="container col-lg-7">
+        <div class="container col-lg-6">
             <div class="jumbotron">
 
-                <h2 class="display-4">Summary: Latitude vs. X</h2>
+                <h2 class="display-4">Max Temperature</h2>
                 <hr class="my-4">
                 <div class= "row">
-                    <div class="col 3">
+                    <div >
                         <img src="Resources/assets/Fig1.png" class="img-fluid float-left"/>
                     </div>
-                    <div class="col 9">  
-                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled fata from the OpenWeatherMap API to assemble a dataset on over 500 cities</p>
-                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we look at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    <div >
+                        <br>
+                        <br>  
+                        <p>As expected, the weather becomes significantly warmer as one approaches the equator
+                            (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of ther year this data was gathered.
+                        </p>
                     </div>  
                 </div>
             </div>

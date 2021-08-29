@@ -1,11 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Welcome to My Weather Data Landing Page</title>
+	<title>Windspeed</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 	<!-- <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"> -->
@@ -45,18 +43,27 @@
 <!-- Text -->
 
     <div class="row mt-5">
-        <div class="container col-lg-7">
+        <div class="container col-lg-6">
             <div class="jumbotron">
 
-                <h2 class="display-4">Summary: Latitude vs. X</h2>
+                <h2 class="display-4">Max Windspeed</h2>
                 <hr class="my-4">
                 <div class= "row">
-                    <div class="col 3">
-                        <img src="Resources/assets/Fig1.png" class="img-fluid float-left"/>
+                    <div >
+                        <img src="Resources/assets/Fig4.png" class="img-fluid float-left"/>
                     </div>
-                    <div class="col 9">  
-                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled fata from the OpenWeatherMap API to assemble a dataset on over 500 cities</p>
-                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we look at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    <div >
+                        <br>
+                        <br>  
+                        <p>
+                            
+                            From both the output of the Northern and Southern Hemisphere Latitudes vs Cloudiness Regression codes, we can observe that as latitude increases so does cloudiness. In more detail, past the equator, as latitude increases by 1 degree, humidity will rise by 0.23%. This R value or correlation coefficient suggests a weak positive correlation. While in the southern hemisphere, as you approach the equator as latitude increases by 1 humidity will increase by 0.58% with a moderate to strong positive correlation.
+                        </p>
+                        <p>   
+                            The presence of clouds would hypothetically be highly correlated with humidity as moisture is needed to create clouds. Thus, similarly to humidity, we would expect cloudiness to fall as you left the equator. Similarly to the latitude vs humidity graphs, we find that data from the southern hemisphere is consistent with expectation and the northern hemisphere data is not. Due to the hypothesised degree of correlation between humidity and clouds we can explain for the unexpected observation using the same reasoning. Being weather shocks and biased sampling methodology.
+
+                          
+                        </p>
                     </div>  
                 </div>
             </div>
