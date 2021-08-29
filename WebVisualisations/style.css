@@ -31,3 +31,7 @@ h2 {
 .nav-link {
     font-weight: bold;
 }
+
+#table {
+    vertical-align: middle;
+}
